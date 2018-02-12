@@ -15,6 +15,7 @@
 		466E8B5C2031448B00347842 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 466E8B5B2031448B00347842 /* main.m */; };
 		466E8B662031448B00347842 /* ToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 466E8B652031448B00347842 /* ToolsTests.m */; };
 		466E8B712031448B00347842 /* ToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 466E8B702031448B00347842 /* ToolsUITests.m */; };
+		466E8B81203148F800347842 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 466E8B80203148F800347842 /* UIView+Extension.m */; };
 		B3DE23F9C6C03F7C0ED674C1 /* libPods-Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D9E76EFC56AF0BBD3D8323 /* libPods-Tools.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 		466E8B6C2031448B00347842 /* ToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		466E8B702031448B00347842 /* ToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolsUITests.m; sourceTree = "<group>"; };
 		466E8B722031448B00347842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		466E8B7F203148F800347842 /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		466E8B80203148F800347842 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		99D9E76EFC56AF0BBD3D8323 /* libPods-Tools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A101B53F90B97301ADA76451 /* Pods-Tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tools/Pods-Tools.release.xcconfig"; sourceTree = "<group>"; };
 		D8E68BF66B1080BB85048BA9 /* Pods-Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tools/Pods-Tools.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +120,7 @@
 		466E8B4B2031448B00347842 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				466E8B7E2031481A00347842 /* category */,
 				466E8B4C2031448B00347842 /* AppDelegate.h */,
 				466E8B4D2031448B00347842 /* AppDelegate.m */,
 				466E8B4F2031448B00347842 /* ViewController.h */,
@@ -146,6 +150,15 @@
 				466E8B722031448B00347842 /* Info.plist */,
 			);
 			path = ToolsUITests;
+			sourceTree = "<group>";
+		};
+		466E8B7E2031481A00347842 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				466E8B7F203148F800347842 /* UIView+Extension.h */,
+				466E8B80203148F800347842 /* UIView+Extension.m */,
+			);
+			path = category;
 			sourceTree = "<group>";
 		};
 		950EDAFA60F73F7451BE8AE9 /* Frameworks */ = {
@@ -345,6 +358,7 @@
 			files = (
 				466E8B512031448B00347842 /* ViewController.m in Sources */,
 				466E8B5C2031448B00347842 /* main.m in Sources */,
+				466E8B81203148F800347842 /* UIView+Extension.m in Sources */,
 				466E8B4E2031448B00347842 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
